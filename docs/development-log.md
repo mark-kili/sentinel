@@ -29,3 +29,21 @@ SSH is a better long-term workflow than HTTPS authentication.
 - Python environment
 - Configuration
 - Logging
+
+
+## 2026-07-02
+
+### Milestone 2
+
+Successfully configured the local Python development environment.
+
+Achievements:
+- Installed Python virtual environment support.
+- Recreated the virtual environment.
+- Verified pip inside the virtual environment.
+- Standardized the development environment for Sentinel.
+
+Lessons learned:
+- Difference between system Python and virtual environments.
+- Why `python3 -m venv` is used.
+- How `pip` is installed inside a virtual environment.
