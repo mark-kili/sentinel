@@ -300,3 +300,33 @@ python -m tests.test_settings
 executes the module as part of the project package, preserving package imports.
 
 For larger projects, prefer `python -m` when running tests.
+
+
+# Logging
+
+## logging module
+
+Python's built-in logging module is used instead of print() because it supports log levels, timestamps, and output to multiple destinations.
+
+## RotatingFileHandler
+
+Rotates log files automatically when they reach a specified size.
+
+Benefits:
+- Prevents log files from growing indefinitely.
+- Keeps recent history.
+- Suitable for long-running services.
+
+## Log Levels
+
+DEBUG
+INFO
+WARNING
+ERROR
+CRITICAL
+
+Production systems generally use INFO and above.
+
+## Lesson Learned
+
+Logging is preferred over print() because it provides structured, timestamped, and persistent output that helps diagnose problems.
