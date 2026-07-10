@@ -330,3 +330,69 @@ Production systems generally use INFO and above.
 ## Lesson Learned
 
 Logging is preferred over print() because it provides structured, timestamped, and persistent output that helps diagnose problems.
+
+
+# SQLAlchemy
+
+## What is an ORM?
+
+ORM stands for Object Relational Mapper.
+
+Instead of writing SQL manually, Python objects are translated into SQL automatically.
+
+Example:
+
+Python:
+user = User(name="Mark")
+
+SQL:
+INSERT INTO users ...
+
+---
+
+## SQLAlchemy
+
+SQLAlchemy is Python's most popular ORM.
+
+Benefits:
+
+- Cleaner code
+- Database independent
+- Easier maintenance
+- Supports relationships
+- Works with SQLite, PostgreSQL, MySQL and others
+
+---
+
+## SQLite
+
+SQLite is a lightweight database stored in a single file.
+
+Advantages:
+
+- No server required
+- Built into Python
+- Perfect for development
+
+Later Sentinel will support PostgreSQL with minimal code changes.
+# SQLAlchemy Engine
+
+The engine is the application's connection to the database.
+
+It does not execute queries directly.
+
+Instead, sessions use the engine.
+
+Application
+
+↓
+
+Session
+
+↓
+
+Engine
+
+↓
+
+Database

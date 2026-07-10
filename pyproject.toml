@@ -5,7 +5,12 @@ description = "Telegram-based server monitoring and maintenance platform"
 readme = "README.md"
 requires-python = ">=3.11"
 
-dependencies = []
+dependencies = [
+    "pydantic-settings",
+    "python-dotenv",
+    "sqlalchemy",
+    "alembic"
+]
 
 [build-system]
 requires = ["hatchling"]
